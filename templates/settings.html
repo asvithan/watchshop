@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}settings{% endblock title %}
+
+{% block main-content %}
+
+<div class="container">
+	<div class="card" style="width:100%;height:570px;">
+  <div class="card-body">
+  	<br><br><br><br>
+  	<h2>Settings</h2>
+  	<li><a href="{% url 'countryandlanguage' %}">Country and Language</a></li>
+  	<li><a href="{% url 'notifications' %}">Notifications</a></li>
+  	<li><a href="{% url 'alexa' %}">Alexa</a></li>
+  	<li><a href="#">Permissions</a></li>
+  	<li><a href="#">Default Purchase Settings</a></li>
+  	<li><a href="#">Legal and About</a></li>
+  	<li><a href="#">Switch Accounts</a></li>
+  	<li><a href="#">Sign out</a></li>
+  	<li><a href="#">Additional Settings</a></li>
+  	<li><a href="#">Armani Account</a></li>
+  	<li><a href="#">Services and feedback</a></li>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+{% endblock main-content %}

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Customerservice{% endblock title %}
+
+{% block main-content %}
+
+<br><br><br>
+<div class="container">
+	<div class="card-columns">
+<div class="card bg-light">
+      <div class="card-body text-center">
+      	<h2>Welcome to Customer Service</h2>
+        <p class="card-text">Armani is focused on the health and safety of both out customers and associates. If your address lies in an area with local restrictions, then your order might get delayed. You may also experience longer hold times when you call us. For fast and easy self-help solutions, please visit the your orders section on the Armani app or website. Thank you for the patience.</p>
+      </div>
+    </div>
+</div>
+</div>
+
+
+<h2>Quick links</h2>
+<div class="container">
+<div class="card-columns">
+<div class="carx bg-light">
+<div class="card-body text-center">
+<p class="card-text"><a href="#">Your orders</a></p>
+<p class="card-text"><a href="{% url 'covid19andarmani' %}">Covid-19 and Armani</a></p>
+<p class="card-text"><a href="#">Returns & Refunds</a></p>
+<p class="card-text"><a href="#">Armani pay Transactions</a></p>
+<p class="card-text"><a href="#">Account settings</a></p>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+
+
+<h2><b>Need more help?</b></h2>
+<div class="container">
+<form>
+<div class="form-group">
+      <input type="search" class="form-control" id="search" placeholder="Search" name="search">
+    </div>
+</form>
+</div>
+
+<h3><b>Didn't find what you were looking for?</b></h3>
+
+<div class="container">
+<button type="button" class="btn btn-secondary">Chat with us</button>
+<button type="button" class="btn btn-secondary">Talk to us</button>
+</div>
+<br>
+{% endblock main-content %}

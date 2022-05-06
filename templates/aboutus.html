@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}aboutus{% endblock title %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
+{% block main-content %}
+
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Watch Page</h2><br>
+      <h4>Welcome to Armani Store, your number one source for all things products,ie:watches,sunglasses. We're dedicated to giving you the very best of product, with a focus on three characteristics, ie: dependability,customer and uniqueness.</h4><br>
+      <p>Founded in 1987 by Giorgio Armani, Armani has come to long way from its beginnings in a home office. When Armani first started out, his passion for helping others parents be more eco-friendly, providing the best equipment for his fellow musicians drove him to do intense research, and gave him the impetus to turn hard work and inspiration into a booming online store. We now serve customers all over place in the US World, the Austin area and are thrilled to be a part of the wing of the industry.</p><br>
+      <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p><br>
+      <p>Sincerely,</p>
+      <b>Giorgio Armani[CEO,Founder]</b><br>
+      <br><button class="btn btn-danger btn-lg">Get Started</button>
+    </div>
+    <br><br>
+    <img src="{% static 'images/image31.jpg' %}" style="width:30%; height:400px;">
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+     <img src="{% static 'images/image32.jpg' %}" style="width:30%;height:290px;">
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h5><strong>MISSION:</strong> For the future of the brand, the foundation will “ensure the respect of values and principles: the management of activities in an ethic way with moral integrity and correctness, the priority of the continuous development at a global level of the Armani name, careful strategy of diversification of the company and its brands, maintaining consistency in the design of products, image and communication.”</h5><br>
+      <h5><strong>VISION:</strong> To develop innovative business model that supports production and marketing.To develop and launch new models with contemporary styling. Focused approach on optimum utilization of resources.</h5>
+    </div>
+  </div>
+</div>
+
+
+{% endblock main-content %}
